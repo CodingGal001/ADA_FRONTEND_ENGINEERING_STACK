@@ -1,1 +1,1 @@
-ADA frontend engineering stact
+ADA frontend engineering stack
