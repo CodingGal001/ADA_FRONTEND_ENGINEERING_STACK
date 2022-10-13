@@ -1,0 +1,27 @@
+body{
+    background-image: url("./images/IMG_2621.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+
+}
+
+.cake ul{
+    list-style-type: none;
+}
+.cake{
+    background-color: azure;
+    padding: 40px;
+    border-radius: 20px;
+    border: solid 1px chocolate;
+    box-shadow: 0px 4px 8px 10px chocolate
+}
+.cake h1{
+    font-size: 40px;
+    font-style: italic ;
+}
