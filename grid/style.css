@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+img{
+    width: 200px;
+}
+.nav ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+.nav li{
+    margin-right: 20px;
+}
+.hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px;
+    background: #f4f4f4;
+    width: auto;
+    height: 500px;
+}
+
+.left{
+    width: 300px;
+}
+
+.right img{
+    width: 500px;
+    height: 500px;
+
+}
+.left h1{
+    color: #333333;
+    font-size: 32px;
+}
+.left p{
+    color: #333;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-bottom: solid 2px green;
+    border-top: solid 2px green;
+    
+}
+.footer ul{
+    list-style-type: none;
+    
+}
+.copy{
+    text-align: center;
+
+}
+.first{
+    display: flex;
+}
+.middle{
+    padding: 20px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.card{
+    height: 350px;
+    width:  250px;
+    border: solid 1px green;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+.card p{
+   
+}
+
+.card2{
+    height: 185px;
+    width:  350px;
+    border: solid 1px green;
+    margin: 0 20px 20px 20px; 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+}
+.card2 img{
+    width: 150px;
+}
+.card3{
+    height: 185px;
+    width:  650px;
+    border: solid 1px green;
+    margin: 0 20px 20px 20px; 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+}
+
+@media (max-width: 400px) {
+    .first{
+        display: flex;
+        flex-direction: column;
+    }
+    .hero{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 20px;
+        background: #f4f4f4;
+        width: auto;
+        height: auto;
+    }
+    .right img{
+        width: 300px;
+        height: 300px;
+    
+    }
+    .card3{
+        height: 185px;
+        width:  350px;
+        border: solid 1px green;
+        margin: 0 20px 20px 20px; 
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 10px;
+    }
+}
