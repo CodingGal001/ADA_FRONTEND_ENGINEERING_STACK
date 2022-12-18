@@ -1,29 +1,24 @@
-
-function validateForm() {
-
-    var input = [document.getElementById("username"), document.getElementById("password")];
-    var errorTxt = document.getElementById("error");
-    var error = 0
-  for (var i = 0; i < input.length; i++) {
-
-    
-    var emailPattern = /[a-z]{3,10}@gmail|yahoo|mail|hotmail\.com|co\.uk?/;
-    var passwordPattern =/[a-z]{3,6}/;
-
-      
+function formValidation() {
    
-       if (input[i].value === "") {
-        error ++;
-    }
+   let userDetails = [document.getElementById("username"), document.getElementById("password")];
+   let errorMsg = document.getElementById("errorMsg");
+  
+   let error = 0;
 
-    
-         if (emailPattern.test(input[0].value) && input[1].value.match(passwordPattern) && error === 0){
-            alert("Login Successful!");
-        }
 
-        else{
-            errorTxt.innerHTML = ("Enter a valid email address or password");
-        }
-        return;
-    }
- }
+   for (let i = 0; i < userDetails.length; i++) {
+       const emailType = /[a-z]{3,10}@gmail|yahoo|mail|hotmail\.com|co\.uk?/;
+       const passwordType =/[a-z]{3,6}/;
+       
+       if (userDetails[i].value === "") {
+           error ++;
+       }
+       if (emailType.test(userDetails[0].value) && userDetails[1].value.match(passwordType) && error === 0){
+           alert("Login Successful!");
+       }
+       else{
+           errorMsg.innerHTML = ("Either one of your details is incorrect");
+       }
+       return;
+   }
+}
