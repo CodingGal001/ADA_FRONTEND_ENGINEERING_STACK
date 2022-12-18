@@ -3,151 +3,58 @@
     margin: 0;
 }
 
-.container-fluid{
-    padding: 0;
-    height: fit-content;
-    background-color: #ffffff;
-}
-
-
-
-#bg-img{
-    background: purple;
-    min-height: 90vh;
+section{
     display: flex;
-    justify-content: center;
-    align-item: center;
 }
-
-@media only screen and (min-width: 1000px){
-    #bg-img img{
-        width: 50%;
-        height: 60%;
-        margin-top: 20%;
-    }
-    #bg-img img:hover{
-        width: 70%;
-        height: 80%;
-        margin-top: 10%;
-    }
-}
-
-form{
-    background-color: #ffffff;
-    height: fit-content;
-}
-h3{
-    font-family: lato;
-}
-.card{
-    height: 40%;
-    border:none;
-    padding: 40px;
-}
-
-.card-header{
-    background-color: white;
-    outline: none;
-    border: none;
-    color: #707772;
-    font-family: 'Pacifico', cursive;
-}
-
-.card-title{
-    padding: 10px;
-    margin: 30px 0;
-}
-
-label{
-    display: block;
-    color: #707772;
-    font-size: 13px;
-}
-
-input{
-    width: 100%;
-    margin-bottom: 5px;
-    padding: 5px;
-    outline: none;
-    border: none;
-    border-bottom: 1px solid #e6e6e6;
-    position: relative;
-}
-
-#error{
-font-size: 11px;
-color: red;
-}
-
-.forgotpassword{
-    text-align: right;
-    font-size: 11px;
-    color: #707772;
-    cursor: pointer;
-}
-
-.btn{
-    width: 45%;
-    display: block;
-    margin: 15px auto;
-    border-radius: 50px;
+.left{
     background: purple;
-    color: #ffffff;
+    height: 100vh;
+    width: 60vw;
+    display: flex;
+    justify-content: center; 
+    margin-top: -20px;
+    margin-left: -20px;  
 }
-
-.btn:hover{
-    width: 45%;
-    display: block;
-    margin: 15px auto;
-    border-radius: 50px;
-    background: #C27BC1;
-    color: #ffffff;
+.right{
+    height: 100vh;
+    width: 50vw;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
 }
+.left img{
+    width: 300px;
+    height: 300px;
+    margin-top: 20%;
+}
+.left img:hover{
+    width: 400px;
+    height: 400px;
+    margin-top: 20%;
+}
+form{
 
-.card-footer{
-    background-color: white;
-    outline: none;
+}
+form input{
+    width: 150px;
+    border-radius: 10px;
+    border: 1px solid purple;
+    margin: 10px 0;
+    padding: 10px;
+}
+.top h3{
+    color: purple;
+}
+button{
+    background: purple;
+    color: #fff;
     border: none;
-
+    outline: mone;
+    width: 150px;
+    height: 30px;
+    border-radius: 10px;
 }
-
-.fa-google {
-    background: conic-gradient(from -45deg, #ea4335 110deg, #4285f4 90deg 180deg, #34a853 180deg 270deg, #fbbc05 270deg) 73% 55%/150% 150% no-repeat;
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    -webkit-text-fill-color: transparent;
-    font-size: 20px;
-  }
-
-  hr{
-      width: 30%;
-      display: inline-block;
-      margin: 0;
-  }
-
-  .hr-text{
-      display: inline-block;
-      margin: 0 10px 0 0;
-      font-size: 12px;
-  }
-
-  p{
-      padding: 10px;
-  }
-
-  p.google a{
-    text-decoration: none;
-    color: #707772;
-  }
-
-  p.createaccount{
-      color: #707772;
-      padding: 10px;
-  }
-
-  p.createaccount a{
-      color: #707772;
-  }
-  
+button:hover{
+    background: #C27BC1;
+}
 
